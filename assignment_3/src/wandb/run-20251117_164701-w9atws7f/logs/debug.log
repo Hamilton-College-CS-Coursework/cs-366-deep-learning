@@ -1,0 +1,24 @@
+2025-11-17 16:47:01,663 INFO    MainThread:1256095 [wandb_setup.py:_flush():81] Current SDK version is 0.22.2
+2025-11-17 16:47:01,663 INFO    MainThread:1256095 [wandb_setup.py:_flush():81] Configure stats pid to 1256095
+2025-11-17 16:47:01,663 INFO    MainThread:1256095 [wandb_setup.py:_flush():81] Loading settings from /home/dmaurett/.config/wandb/settings
+2025-11-17 16:47:01,663 INFO    MainThread:1256095 [wandb_setup.py:_flush():81] Loading settings from /home/dmaurett/assignment_3/src/wandb/settings
+2025-11-17 16:47:01,663 INFO    MainThread:1256095 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-11-17 16:47:01,664 INFO    MainThread:1256095 [wandb_init.py:setup_run_log_directory():705] Logging user logs to /home/dmaurett/assignment_3/src/wandb/run-20251117_164701-w9atws7f/logs/debug.log
+2025-11-17 16:47:01,664 INFO    MainThread:1256095 [wandb_init.py:setup_run_log_directory():706] Logging internal logs to /home/dmaurett/assignment_3/src/wandb/run-20251117_164701-w9atws7f/logs/debug-internal.log
+2025-11-17 16:47:01,664 INFO    MainThread:1256095 [wandb_init.py:init():832] calling init triggers
+2025-11-17 16:47:01,664 INFO    MainThread:1256095 [wandb_init.py:init():837] wandb.init called with sweep_config: {}
+config: {'batch_size': 32, 'optimizer': 32, 'lr': 0.0001, 'scheduler': 'plateau', 'loss': 'NLL', 'epochs': 1, '_wandb': {}}
+2025-11-17 16:47:01,664 INFO    MainThread:1256095 [wandb_init.py:init():880] starting backend
+2025-11-17 16:47:01,868 INFO    MainThread:1256095 [wandb_init.py:init():883] sending inform_init request
+2025-11-17 16:47:01,871 INFO    MainThread:1256095 [wandb_init.py:init():891] backend started and connected
+2025-11-17 16:47:01,872 INFO    MainThread:1256095 [wandb_init.py:init():961] updated telemetry
+2025-11-17 16:47:01,875 INFO    MainThread:1256095 [wandb_init.py:init():985] communicating run to backend with 90.0 second timeout
+2025-11-17 16:47:02,728 INFO    MainThread:1256095 [wandb_init.py:init():1036] starting run threads in backend
+2025-11-17 16:47:02,804 INFO    MainThread:1256095 [wandb_run.py:_console_start():2509] atexit reg
+2025-11-17 16:47:02,804 INFO    MainThread:1256095 [wandb_run.py:_redirect():2357] redirect: wrap_raw
+2025-11-17 16:47:02,804 INFO    MainThread:1256095 [wandb_run.py:_redirect():2426] Wrapping output streams.
+2025-11-17 16:47:02,804 INFO    MainThread:1256095 [wandb_run.py:_redirect():2449] Redirects installed.
+2025-11-17 16:47:02,805 INFO    MainThread:1256095 [wandb_init.py:init():1076] run started, returning control to user process
+2025-11-17 16:47:06,413 INFO    MainThread:1256095 [wandb_run.py:_config_callback():1392] config_cb None None {'vocab_size': 30522}
+2025-11-17 16:47:36,809 INFO    wandb-AsyncioManager-main:1256095 [service_client.py:_forward_responses():80] Reached EOF.
+2025-11-17 16:47:36,809 INFO    wandb-AsyncioManager-main:1256095 [mailbox.py:close():137] Closing mailbox, abandoning 2 handles.

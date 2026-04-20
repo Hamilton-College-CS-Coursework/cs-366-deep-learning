@@ -1,0 +1,14 @@
+{"time":"2025-11-18T15:24:43.454859322-05:00","level":"INFO","msg":"stream: starting","core version":"0.22.2"}
+{"time":"2025-11-18T15:24:43.654222638-05:00","level":"INFO","msg":"stream: created new stream","id":"26cdmxnf"}
+{"time":"2025-11-18T15:24:43.654276657-05:00","level":"INFO","msg":"handler: started","stream_id":"26cdmxnf"}
+{"time":"2025-11-18T15:24:43.654389585-05:00","level":"INFO","msg":"stream: started","id":"26cdmxnf"}
+{"time":"2025-11-18T15:24:43.654440739-05:00","level":"INFO","msg":"writer: started","stream_id":"26cdmxnf"}
+{"time":"2025-11-18T15:24:43.654464001-05:00","level":"INFO","msg":"sender: started","stream_id":"26cdmxnf"}
+{"time":"2025-11-18T15:25:44.031226506-05:00","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":5974}
+{"time":"2025-11-18T15:25:44.122647419-05:00","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":24}
+{"time":"2025-11-18T15:37:55.932704947-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact model-26cdmxnf","runtime_seconds":0.176112477},{"desc":"updating run metadata","runtime_seconds":0.001077942}],"total_operations":2}}
+{"time":"2025-11-18T15:37:58.622725928-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-18T15:37:58.819497452-05:00","level":"INFO","msg":"stream: closing","id":"26cdmxnf"}
+{"time":"2025-11-18T15:37:58.819508763-05:00","level":"INFO","msg":"handler: closed","stream_id":"26cdmxnf"}
+{"time":"2025-11-18T15:37:58.819568313-05:00","level":"INFO","msg":"sender: closed","stream_id":"26cdmxnf"}
+{"time":"2025-11-18T15:37:58.819572971-05:00","level":"INFO","msg":"stream: closed","id":"26cdmxnf"}

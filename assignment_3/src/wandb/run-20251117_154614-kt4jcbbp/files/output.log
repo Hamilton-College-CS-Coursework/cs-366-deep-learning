@@ -1,0 +1,44 @@
+Traceback (most recent call last):
+  File "/home/oadenira/assignment_3/src/train.py", line 84, in <module>
+    main()
+  File "/home/oadenira/assignment_3/src/train.py", line 78, in main
+    trainer.fit(model_module, datamodule=data_module)
+  File "/home/oadenira/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 560, in fit
+    call._call_and_handle_interrupt(
+  File "/home/oadenira/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/oadenira/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 598, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/oadenira/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 973, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+  File "/home/oadenira/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/home/oadenira/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+  File "/home/oadenira/assignment_3/src/datamodule.py", line 39, in setup
+    IMBD_dataset = ConcatDataset([train_set, test_set])
+  File "/home/oadenira/.local/lib/python3.10/site-packages/torch/utils/data/dataset.py", line 286, in __init__
+    assert not isinstance(d, IterableDataset), "ConcatDataset does not support IterableDataset"
+AssertionError: ConcatDataset does not support IterableDataset
+Traceback (most recent call last):
+  File "/home/oadenira/assignment_3/src/train.py", line 84, in <module>
+    main()
+  File "/home/oadenira/assignment_3/src/train.py", line 78, in main
+    trainer.fit(model_module, datamodule=data_module)
+  File "/home/oadenira/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 560, in fit
+    call._call_and_handle_interrupt(
+  File "/home/oadenira/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/oadenira/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 598, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/oadenira/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 973, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+  File "/home/oadenira/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 108, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/home/oadenira/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 199, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+  File "/home/oadenira/assignment_3/src/datamodule.py", line 39, in setup
+    IMBD_dataset = ConcatDataset([train_set, test_set])
+  File "/home/oadenira/.local/lib/python3.10/site-packages/torch/utils/data/dataset.py", line 286, in __init__
+    assert not isinstance(d, IterableDataset), "ConcatDataset does not support IterableDataset"
+AssertionError: ConcatDataset does not support IterableDataset

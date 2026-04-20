@@ -1,0 +1,78 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        e:
+            pmk16ljgxshhym9mnzfi0kkwtbzmmcpo:
+                codePath: src/train.py
+                codePathLocal: train.py
+                cpu_count: 6
+                cpu_count_logical: 12
+                cudaVersion: "12.8"
+                disk:
+                    /:
+                        total: "973837025280"
+                        used: "90101940224"
+                email: dmaurett@hamilton.edu
+                executable: /opt/miniforge3/bin/python
+                git:
+                    commit: 0e9f20cfe41a40eb908bd1c002e27bf46d530e7a
+                    remote: https://github.com/kstillsOgburn-hamilton/assignment_3.git
+                gpu: NVIDIA GeForce RTX 5070 Ti
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Blackwell
+                      cudaCores: 8960
+                      memoryTotal: "17094934528"
+                      name: NVIDIA GeForce RTX 5070 Ti
+                      uuid: GPU-4ae60023-26ce-27ea-83a3-548741a3838f
+                host: cs-dept-llm-4
+                memory:
+                    total: "32747773952"
+                os: Linux-6.12.10-76061203-generic-x86_64-with-glibc2.35
+                program: /home/dmaurett/assignment_3/src/train.py
+                python: CPython 3.12.10
+                root: /home/dmaurett/assignment_3/src
+                startedAt: "2025-11-17T21:47:01.662470Z"
+                writerId: pmk16ljgxshhym9mnzfi0kkwtbzmmcpo
+        m: []
+        python_version: 3.12.10
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 106
+            "2":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 106
+            "3":
+                - 16
+            "4": 3.12.10
+            "5": 0.22.2
+            "6": 4.57.1
+            "12": 0.22.2
+            "13": linux-x86_64
+batch_size:
+    value: 32
+epochs:
+    value: 1
+loss:
+    value: NLL
+lr:
+    value: 0.0001
+optimizer:
+    value: 32
+scheduler:
+    value: plateau
+vocab_size:
+    value: 30522

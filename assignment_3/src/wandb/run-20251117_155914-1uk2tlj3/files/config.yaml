@@ -1,0 +1,107 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        e:
+            cn7hl7oc9x6izp83rlkwk3kdngljwvfw:
+                codePath: src/train.py
+                codePathLocal: train.py
+                cpu_count: 6
+                cpu_count_logical: 12
+                cudaVersion: "12.8"
+                disk:
+                    /:
+                        total: "973837025280"
+                        used: "89057226752"
+                email: dmaurett@hamilton.edu
+                executable: /opt/miniforge3/bin/python
+                git:
+                    commit: 99fc6e3d3e021c5c654f7b3f3474d303a42a7bcd
+                    remote: https://github.com/kstillsOgburn-hamilton/assignment_3.git
+                gpu: NVIDIA GeForce RTX 5070 Ti
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Blackwell
+                      cudaCores: 8960
+                      memoryTotal: "17094934528"
+                      name: NVIDIA GeForce RTX 5070 Ti
+                      uuid: GPU-4ae60023-26ce-27ea-83a3-548741a3838f
+                host: cs-dept-llm-4
+                memory:
+                    total: "32747773952"
+                os: Linux-6.12.10-76061203-generic-x86_64-with-glibc2.35
+                program: /home/dmaurett/assignment_3/src/train.py
+                python: CPython 3.12.10
+                root: .
+                startedAt: "2025-11-17T20:59:14.980574Z"
+                writerId: cn7hl7oc9x6izp83rlkwk3kdngljwvfw
+        m:
+            - "1": trainer/global_step
+              "6":
+                - 3
+              "7": []
+            - "2": '*'
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.12.10
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 106
+            "2":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 106
+            "3":
+                - 7
+                - 16
+                - 66
+            "4": 3.12.10
+            "5": 0.22.2
+            "6": 4.57.1
+            "12": 0.22.2
+            "13": linux-x86_64
+BATCH_SIZE:
+    value: 32
+DROPOUT_RATE:
+    value: 0.3
+EMBEDDING_DIM:
+    value: 128
+HIDDEN_DIM:
+    value: 256
+LEARNING_RATE:
+    value: 0.0001
+LSTM_LAYERS:
+    value: 2
+MAX_SEQ_LENGTH:
+    value: 256
+NUM_CLASSES:
+    value: 2
+NUM_EPOCHS:
+    value: 10
+OPTIMIZER:
+    value: AdamW
+RANDOM_SEED:
+    value: 42
+TEST_SPLIT:
+    value: 0.15
+TOKENIZER_NAME:
+    value: bert-base-uncased
+TRAIN_SPLIT:
+    value: 0.7
+VAL_SPLIT:
+    value: 0.15
+vocab_size:
+    value: 30522

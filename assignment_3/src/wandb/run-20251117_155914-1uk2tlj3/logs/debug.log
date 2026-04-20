@@ -1,0 +1,24 @@
+2025-11-17 15:59:14,981 INFO    MainThread:1238446 [wandb_setup.py:_flush():81] Current SDK version is 0.22.2
+2025-11-17 15:59:14,981 INFO    MainThread:1238446 [wandb_setup.py:_flush():81] Configure stats pid to 1238446
+2025-11-17 15:59:14,981 INFO    MainThread:1238446 [wandb_setup.py:_flush():81] Loading settings from /home/dmaurett/.config/wandb/settings
+2025-11-17 15:59:14,981 INFO    MainThread:1238446 [wandb_setup.py:_flush():81] Loading settings from /home/dmaurett/assignment_3/src/wandb/settings
+2025-11-17 15:59:14,981 INFO    MainThread:1238446 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-11-17 15:59:14,981 INFO    MainThread:1238446 [wandb_init.py:setup_run_log_directory():705] Logging user logs to ./wandb/run-20251117_155914-1uk2tlj3/logs/debug.log
+2025-11-17 15:59:14,981 INFO    MainThread:1238446 [wandb_init.py:setup_run_log_directory():706] Logging internal logs to ./wandb/run-20251117_155914-1uk2tlj3/logs/debug-internal.log
+2025-11-17 15:59:14,981 INFO    MainThread:1238446 [wandb_init.py:init():832] calling init triggers
+2025-11-17 15:59:14,981 INFO    MainThread:1238446 [wandb_init.py:init():837] wandb.init called with sweep_config: {}
+config: {'BATCH_SIZE': 32, 'DROPOUT_RATE': 0.3, 'EMBEDDING_DIM': 128, 'HIDDEN_DIM': 256, 'LEARNING_RATE': 0.0001, 'LSTM_LAYERS': 2, 'MAX_SEQ_LENGTH': 256, 'NUM_CLASSES': 2, 'NUM_EPOCHS': 10, 'OPTIMIZER': 'AdamW', 'RANDOM_SEED': 42, 'TEST_SPLIT': 0.15, 'TOKENIZER_NAME': 'bert-base-uncased', 'TRAIN_SPLIT': 0.7, 'VAL_SPLIT': 0.15, '_wandb': {}}
+2025-11-17 15:59:14,981 INFO    MainThread:1238446 [wandb_init.py:init():880] starting backend
+2025-11-17 15:59:15,184 INFO    MainThread:1238446 [wandb_init.py:init():883] sending inform_init request
+2025-11-17 15:59:15,187 INFO    MainThread:1238446 [wandb_init.py:init():891] backend started and connected
+2025-11-17 15:59:15,187 INFO    MainThread:1238446 [wandb_init.py:init():961] updated telemetry
+2025-11-17 15:59:15,190 INFO    MainThread:1238446 [wandb_init.py:init():985] communicating run to backend with 90.0 second timeout
+2025-11-17 15:59:15,751 INFO    MainThread:1238446 [wandb_init.py:init():1036] starting run threads in backend
+2025-11-17 15:59:15,825 INFO    MainThread:1238446 [wandb_run.py:_console_start():2509] atexit reg
+2025-11-17 15:59:15,825 INFO    MainThread:1238446 [wandb_run.py:_redirect():2357] redirect: wrap_raw
+2025-11-17 15:59:15,825 INFO    MainThread:1238446 [wandb_run.py:_redirect():2426] Wrapping output streams.
+2025-11-17 15:59:15,825 INFO    MainThread:1238446 [wandb_run.py:_redirect():2449] Redirects installed.
+2025-11-17 15:59:15,826 INFO    MainThread:1238446 [wandb_init.py:init():1076] run started, returning control to user process
+2025-11-17 15:59:16,608 INFO    MainThread:1238446 [wandb_run.py:_config_callback():1392] config_cb None None {'vocab_size': 30522}
+2025-11-17 16:05:07,112 INFO    wandb-AsyncioManager-main:1238446 [service_client.py:_forward_responses():80] Reached EOF.
+2025-11-17 16:05:07,113 INFO    wandb-AsyncioManager-main:1238446 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.

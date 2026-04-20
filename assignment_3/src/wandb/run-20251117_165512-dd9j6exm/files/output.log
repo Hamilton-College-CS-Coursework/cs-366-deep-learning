@@ -1,0 +1,53 @@
+Seed set to 42
+loading tokenizer...
+preparing and initializing the IMBD data module...
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+training in process...
+/opt/miniforge3/lib/python3.12/site-packages/torch/__init__.py:1551: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  return _C._get_float32_matmul_precision()
+You are using a CUDA device ('NVIDIA GeForce RTX 5070 Ti') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+/opt/miniforge3/lib/python3.12/site-packages/lightning/pytorch/loggers/wandb.py:397: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+/opt/miniforge3/lib/python3.12/site-packages/lightning/pytorch/callbacks/model_checkpoint.py:751: Checkpoint directory /home/dmaurett/assignment_3/src/checkpoints exists and is not empty.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/opt/miniforge3/lib/python3.12/site-packages/lightning/pytorch/utilities/model_summary/model_summary.py:231: Precision 16-mixed is not supported by the model summary.  Estimated model size in MB will not be accurate. Using 32 bits instead.
+
+  | Name             | Type                      | Params | Mode
+-----------------------------------------------------------------------
+0 | model            | Bi_LSTM                   | 6.3 M  | train
+1 | criterion        | NLLLoss                   | 0      | train
+2 | train_acc        | MulticlassAccuracy        | 0      | train
+3 | val_acc          | MulticlassAccuracy        | 0      | train
+4 | test_acc         | MulticlassAccuracy        | 0      | train
+5 | test_conf_matrix | MulticlassConfusionMatrix | 0      | train
+-----------------------------------------------------------------------
+6.3 M     Trainable params
+0         Non-trainable params
+6.3 M     Total params
+25.101    Total estimated model params size (MB)
+10        Modules in train mode
+0         Modules in eval mode
+Epoch 0: 100%|█| 1094/1094 [00:29<00:00, 37.67it/s, v_num=6exm, train_loss_step=0.691, val_loss=0.691
+training done!                                                                                       
+`Trainer.fit` stopped: `max_epochs=1` reached.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Testing DataLoader 0: 100%|████████████████████████████████████████| 235/235 [00:03<00:00, 67.84it/s]Test Confusion Matrix:
+tensor([[ 969, 2744],
+        [ 763, 3024]], device='cuda:0')
+/opt/miniforge3/lib/python3.12/site-packages/lightning/pytorch/trainer/connectors/logger_connector/result.py:213: You called `self.log('test_cm_0_0', ...)` in your `on_test_epoch_end` but the value needs to be floating to be reduced. Converting it to torch.float32. You can silence this warning by converting the value to floating point yourself. If you don't intend to reduce the value (for instance when logging the global step or epoch) then you can use `self.logger.log_metrics({'test_cm_0_0': ...})` instead.
+/opt/miniforge3/lib/python3.12/site-packages/lightning/pytorch/trainer/connectors/logger_connector/result.py:213: You called `self.log('test_cm_0_1', ...)` in your `on_test_epoch_end` but the value needs to be floating to be reduced. Converting it to torch.float32. You can silence this warning by converting the value to floating point yourself. If you don't intend to reduce the value (for instance when logging the global step or epoch) then you can use `self.logger.log_metrics({'test_cm_0_1': ...})` instead.
+/opt/miniforge3/lib/python3.12/site-packages/lightning/pytorch/trainer/connectors/logger_connector/result.py:213: You called `self.log('test_cm_1_0', ...)` in your `on_test_epoch_end` but the value needs to be floating to be reduced. Converting it to torch.float32. You can silence this warning by converting the value to floating point yourself. If you don't intend to reduce the value (for instance when logging the global step or epoch) then you can use `self.logger.log_metrics({'test_cm_1_0': ...})` instead.
+/opt/miniforge3/lib/python3.12/site-packages/lightning/pytorch/trainer/connectors/logger_connector/result.py:213: You called `self.log('test_cm_1_1', ...)` in your `on_test_epoch_end` but the value needs to be floating to be reduced. Converting it to torch.float32. You can silence this warning by converting the value to floating point yourself. If you don't intend to reduce the value (for instance when logging the global step or epoch) then you can use `self.logger.log_metrics({'test_cm_1_1': ...})` instead.
+Testing DataLoader 0: 100%|████████████████████████████████████████| 235/235 [00:03<00:00, 67.75it/s]
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+       Test metric             DataLoader 0
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+        test_acc            0.5324000120162964
+       test_cm_0_0                 969.0
+       test_cm_0_1                2744.0
+       test_cm_1_0                 763.0
+       test_cm_1_1                3024.0
+        test_loss           0.6898615956306458
+─────────────────────────────────────────────────────────────────────────────────────────────────────
