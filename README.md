@@ -2,5 +2,5 @@
 > Select course assignments from CS 366 - Deep Learning
 
 ## Assignments
-* Oxford IIIT Pet Image Segmenetation
-* IMDB Movie Review Tone Evaluation
+* Assignment 2: Oxford IIIT Pet Image Segmenetation
+* Assignment 3: IMDB Movie Review Tone Evaluation
